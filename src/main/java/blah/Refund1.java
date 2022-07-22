@@ -6,6 +6,7 @@ public class Refund1 {
   private String tenderCategory_ = null;
   
   protected String checkVisibilityImpl(Object[] tenders) throws Exception {
+    String unusedLocal;
     if (this.tenderCategory_ != null) {
       boolean anyAvailable = false;
       for (Object tndr : tenders) {
@@ -21,6 +22,12 @@ public class Refund1 {
     }
   return Refund2.GRANTED;
   }
+
+  @Override
+  public boolean equals(Object other) {
+    return true;
+  }
+
 
 }
 
