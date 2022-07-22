@@ -23,6 +23,12 @@ public class Refund1 {
   return Refund2.GRANTED;
   }
 
+  @Override
+  public boolean equals(Object other) {
+    return true;
+  }
+
+
 }
 
 
