@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+
+repositories { 
+    mavenCentral() 
+}
+
+jar {
+    archiveBaseName = 'code_scan'
+    archiveVersion =  '0.1.0'
+}
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+dependencies {
+}
+
